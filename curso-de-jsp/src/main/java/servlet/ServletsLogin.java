@@ -59,13 +59,13 @@ public class ServletsLogin extends HttpServlet {
 		}
 		
 	
-		doGet(request, response);
+		
 		
 	
 	} catch (Exception e) {
-		RequestDispatcher returned = request.getRequestDispatcher("/erro.jsp");
+		RequestDispatcher retorno = request.getRequestDispatcher("/erro.jsp");
 		request.setAttribute("msg", e.getMessage());
-		returned.forward(request, response);
+		retorno.forward(request, response);
 	}
 	
 	}

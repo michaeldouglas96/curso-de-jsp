@@ -26,7 +26,7 @@ public class SingleConnectionBanco {
 		
 		try {
 			if(connection == null) {
-				Class.forName("org.postgresqlDriver"); /* Carrega o driver de conexão do banco */
+				Class.forName("org.postgresql.Driver"); /* Carrega o driver de conexão do banco */
 				connection = DriverManager.getConnection(banco, user, senha);
 				connection.setAutoCommit(false); /* Pra ñ conectar sem nosso comando */
 			} 
