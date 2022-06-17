@@ -45,7 +45,7 @@ h3{
 <h3>Bem vindo ao curso de JSP</h3>  
 
 
-<form action="ServletsLogin" method="post" class="row g-3">
+<form action="<%= request.getContextPath() %>/ServletsLogin" method="post" class="row g-3">
 
 <input type="hidden" value="<%= request.getParameter("url") %>" name="url">
 
